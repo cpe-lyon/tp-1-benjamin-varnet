@@ -41,16 +41,16 @@ Pour trouver le programme ls, il faut faire un find / -name ls Cette commande no
 **Question 4 :**<br/>
 Il n'y a pas d'entrée de manuel pour la commande ll, car il s'agit d'un alias, la commande ll résulte de l'alias suivant : alias ll alias ll='ls -alF<br/>
 
-**Question 5 :**Quelle commande permet d’afficher les fichiers contenus dans le dossier /bin ? <br/>
+**Question 5 :** Quelle commande permet d’afficher les fichiers contenus dans le dossier /bin ? <br/>
 La commande : ls /bin<br/>
 
-**Question 6 :**Que fait la commande ls .. ? <br/>
+**Question 6 :** Que fait la commande ls .. ? <br/>
 Donne ce qui est présent dans le répertoire parent de là où nous sommes actuellement<br/>
 
-**Question 7 :**Quelle commande donne le chemin complet du dossier courant ?<br/>
+**Question 7 :** Quelle commande donne le chemin complet du dossier courant ?<br/>
  La commande : pwd<br/>
 
-**Question 8 :**Que fait la commande echo 'yo' > plop exécutée 2 fois ? <br/>
+**Question 8 :** Que fait la commande echo 'yo' > plop exécutée 2 fois ? <br/>
 Ecris yo dans le fichier plop<br/>
 
 Que fait la commande echo 'yo' >> plop exécutée 2 fois ? Affiche yo et fait un retour à la ligne à chaque éxécution de commande alors que la commande précdenté réécris au début du fichier<br/>
