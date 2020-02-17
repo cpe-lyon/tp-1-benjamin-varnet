@@ -30,23 +30,28 @@ Pour créé un fichier, il suffit de faire la commande suivante : touch "nom du 
 
 Pour supprimer un fichier : il faut faire un rm "nom du fichier" Pour supprimer un dossier : il faut faire un rm "nom du dossier" -r (le -r permet de forcer la suppression du dossier même s'il n'est pas vide)<br/>
 ### Commandes importantes
+**Question 1 :**<br/>
 Pour afficher l'heure, il faut faire la commande suivante : date<br/>
 
 La commande time est un chronomètre pour le temps d'éxécution de la commande Exemple : time man, time ls, time xxx.sh --> retourne le temps d'éxécution qui a été écoulé.<br/>
-
+**Question 2 :**<br/>
 ls --> Liste les dossiers et les fichiers présents dans le répertoire où l'on est la --> Donne tous les fichiers et dossiers même les fichiers cachés (fichiers qui commencent par un .)<br/>
-
+**Question 3 :**<br/>
 Pour trouver le programme ls, il faut faire un find / -name ls Cette commande nous retourne où est le programme ls, il nous retourne par exemple : /usr/bin/ls<br/>
-
+**Question 4 :**<br/>
 Il n'y a pas d'entrée de manuel pour la commande ll, car il s'agit d'un alias, la commande ll résulte de l'alias suivant : alias ll alias ll='ls -alF<br/>
 
-Quelle commande permet d’afficher les fichiers contenus dans le dossier /bin ? La commande : ls /bin<br/>
+**Question 5 :**Quelle commande permet d’afficher les fichiers contenus dans le dossier /bin ? <br/>
+La commande : ls /bin<br/>
 
-Que fait la commande ls .. ? Donne ce qui est présent dans le répertoire parent de là où nous sommes actuellement<br/>
+**Question 6 :**Que fait la commande ls .. ? <br/>
+Donne ce qui est présent dans le répertoire parent de là où nous sommes actuellement<br/>
 
-Quelle commande donne le chemin complet du dossier courant ? La commande : pwd<br/>
+**Question 7 :**Quelle commande donne le chemin complet du dossier courant ?<br/>
+ La commande : pwd<br/>
 
-Que fait la commande echo 'yo' > plop exécutée 2 fois ? Ecris yo dans le fichier plop<br/>
+**Question 8 :**Que fait la commande echo 'yo' > plop exécutée 2 fois ? <br/>
+Ecris yo dans le fichier plop<br/>
 
 Que fait la commande echo 'yo' >> plop exécutée 2 fois ? Affiche yo et fait un retour à la ligne à chaque éxécution de commande alors que la commande précdenté réécris au début du fichier<br/>
 
