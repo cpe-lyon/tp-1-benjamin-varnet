@@ -4,41 +4,42 @@
 
 ## Exercice 2. Prise en main de l’interpréteur de commandes
 ### Manuel
-**Question 1 :**<br/>
+**Question 1 :** A l’aide du manuel, identifiez le rôle de la commande which <br/>
 Rôle de la commande which : La commande which prend un ou plusieurs paramètres. Pour chaque fichiers passés en paramètre, cette commande imprime le chemin de ou des éxécutables dans le terminal.
-**Question 2 :**<br/>
+**Question 2 :** Quand on consulte une page du manuel, comment peut-on rechercher un terme (par exemple, chercher
+le terme option dans la page de manuel de which ? <br/>
 Pour rechercher le terme "option" par exemple dans le man de which il faut taper les commandes suivantes : man which puis quand la page de man est ouverte, il faut faire : /option pour aller au premier terme option sur la page puis faire n pour passer au suivant<br/>
-**Question 3 :**<br/>
+**Question 3 :** Comment quitte-t-on le manuel ? <br/>
 Pour quitter le manuel il suffit de faire q<br/>
-**Question 4 :**<br/>
+**Question 4 :** Chaque section du manuel a une première page, qui présente le contenu de la section. Afficher la première page de la section 6 ; de quoi parle cette section ? <br/>
 Chaque section du manuel a une première page, qui présente le contenu de la section. Afficher la première page de la section 6 ; de quoi parle cette section ? Lorsque nous faisons un man ls par exemple, il y a marqué en haut à gauche : LS(1), ce qui veut dire que nous sommes dans la section 1 du man de la commande ls. Pour aller sur une section particulière d'une commande, il faut faire un man 2 open pour aller dans la deuxième section de la commande open.<br/>
 ### Navigation dans l’arborescence des fichiers
-**Question 1 :**<br/>
+**Question 1 :** Allez dans le dossier /var/log <br/>
 Pour aller dans /var/log, il faut faire un cd /var/log<br/>
-**Question 2 :**<br/>
+**Question 2 :** Remontez dans le dossier parent (/var) en utilisant un chemin relatif <br/>
 Pour remonter dans l'arbroescence, il faut donc faire un cd ..<br/>
-
-Pour revenir au dossier précédent sans utiliser le chemin en /..., il faut faire un cd -<br/>
-**Question 5 :**<br/>
+**Question 4 :** Revenez au dossier précédent (/var) sans utiliser de chemin <br/>
+Pour revenir au dossier précédent sans utiliser le chemin en /..., il faut faire un cd - <br/>
+**Question 5 :** Essayez d’accéder au dossier /root ; que se passe-t-il ?<br/>
 Nous ne pouvons pas accéder au dossier root car il nous faut des droits supplémentaires. --> la commande cd /root ne fonctionne donc pas.<br/>
-**Question 6 :**<br/>
+**Question 6 :** Essayez la commande sudo cd /root ; que se passe-t-il ? Expliquez <br/>
 Le systeme nous demande le mot de passe de notre comopte car nous executons une commande avec sudo, ce qui execute une commande avec les droits root<br/>
-**Question 7 :**<br/>
+**Question 7 :** A partir de votre dossier personnel, créez l’arborescence suivante : <br/>
 Pour créer un dossier il faut faire mkdir "nom du dossier". Notre dossier sera donc créé. Puis, il faut faire un cd /Notrenouveaudossier ce qui va nous placer dans notre dossier créé précéemment, puis, il faut faire un mkdir dans ce dossier pour créé une sorte de sous-dossier.<br/>
 
 Pour créé un fichier, il suffit de faire la commande suivante : touch "nom du fichier"<br/>
 
 Pour supprimer un fichier : il faut faire un rm "nom du fichier" Pour supprimer un dossier : il faut faire un rm "nom du dossier" -r (le -r permet de forcer la suppression du dossier même s'il n'est pas vide)<br/>
 ### Commandes importantes
-**Question 1 :**<br/>
+**Question 1 :** Quelle commande permet d’afficher l’heure ? A quoi sert la commande time ? <br/>
 Pour afficher l'heure, il faut faire la commande suivante : date<br/>
 
 La commande time est un chronomètre pour le temps d'éxécution de la commande Exemple : time man, time ls, time xxx.sh --> retourne le temps d'éxécution qui a été écoulé.<br/>
-**Question 2 :**<br/>
+**Question 2 :** Dans votre dossier personnel, tapez successivement les commandes ls puis la ; que peut-on en déduire sur les fichiers commençant par un point ?<br/>
 ls --> Liste les dossiers et les fichiers présents dans le répertoire où l'on est la --> Donne tous les fichiers et dossiers même les fichiers cachés (fichiers qui commencent par un .)<br/>
-**Question 3 :**<br/>
+**Question 3 :** Où se situe le programme ls ? <br/>
 Pour trouver le programme ls, il faut faire un find / -name ls Cette commande nous retourne où est le programme ls, il nous retourne par exemple : /usr/bin/ls<br/>
-**Question 4 :**<br/>
+**Question 4 :**  Essayez la commande ll. Existe-t-il une entrée de manuel pour cette commande ? Utilisez les commandes alias ou alias pour en savoir plus sur la nature de cette commande <br/>
 Il n'y a pas d'entrée de manuel pour la commande ll, car il s'agit d'un alias, la commande ll résulte de l'alias suivant : alias ll alias ll='ls -alF<br/>
 
 **Question 5 :** Quelle commande permet d’afficher les fichiers contenus dans le dossier /bin ? <br/>
