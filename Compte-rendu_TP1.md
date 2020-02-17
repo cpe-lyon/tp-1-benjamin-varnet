@@ -70,7 +70,7 @@ si on modifie titi tutu est également modifié. Alors que l'inverse n'est pas v
 **Question 13 :** Affichez à l’écran le fichier /var/log/syslog. Quels raccourcis clavier permettent d’interrompre et reprendre le défilement à l’écran ? le raccourci Ctrl + C<br/>
 
 Affichez les 5 premières lignes du fichier /var/log/syslog, puis les 15 dernières, puis seulement les lignes 10 à 20. <br/>
-Exemple : <br/>
+>Exemple : <br/>
 head /var/log/syslog -n 5 <br/>
 tail /var/log/syslog -n 5 <br/>
 head -n 20 /var/log/syslog  | tail -n 10<br/>
@@ -97,7 +97,7 @@ cut permet de couper le fichier -d: permet de dire chaque fois qu'il y a des : e
 
 A l’aide de la commande find, recherchez tous les fichiers se nommant passwd présents sur la machine<br/>
 
-find / -name passwd /usr/bin/passwd /usr/share/bash-completion/completions/passwd /usr/share/lintian/overrides/passwd /usr/share/doc/passwd /etc/passwd /etc/cron.daily/passwd /etc/pam.d/passwd /snap/core/7917/etc/cron.daily/passwd /snap/core/7917/etc/pam.d/passwd /snap/core/7917/etc/passwd /snap/core/7917/usr/bin/passwd /snap/core/7917/usr/share/bash-completion/completions/passwd /snap/core/7917/usr/share/doc/passwd /snap/core/7917/var/lib/extrausers/passwd<br/>
+> find / -name passwd /usr/bin/passwd /usr/share/bash-completion/completions/passwd /usr/share/lintian/overrides/passwd /usr/share/doc/passwd /etc/passwd /etc/cron.daily/passwd /etc/pam.d/passwd /snap/core/7917/etc/cron.daily/passwd /snap/core/7917/etc/pam.d/passwd /snap/core/7917/etc/passwd /snap/core/7917/usr/bin/passwd /snap/core/7917/usr/share/bash-completion/completions/passwd /snap/core/7917/usr/share/doc/passwd /snap/core/7917/var/lib/extrausers/passwd<br/>
 
 **Question 19 :** Modifiez la commande précédente pour que la liste des fichiers trouvés soit enregistrée dans le fichier \~/list_passwd_files.txt et que les erreurs soient redirigées vers le fichier spécial /dev/null find / -name passwd > list_passwd_files.txt 2> /dev/null
 
