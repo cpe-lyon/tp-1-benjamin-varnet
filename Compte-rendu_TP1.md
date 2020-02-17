@@ -6,24 +6,33 @@
 ### Manuel
 **Question 1 :** A l’aide du manuel, identifiez le rôle de la commande which <br/>
 Rôle de la commande which : La commande which prend un ou plusieurs paramètres. Pour chaque fichiers passés en paramètre, cette commande imprime le chemin de ou des éxécutables dans le terminal.
+
 **Question 2 :** Quand on consulte une page du manuel, comment peut-on rechercher un terme (par exemple, chercher
 le terme option dans la page de manuel de which ? <br/>
 Pour rechercher le terme "option" par exemple dans le man de which il faut taper les commandes suivantes : man which puis quand la page de man est ouverte, il faut faire : /option pour aller au premier terme option sur la page puis faire n pour passer au suivant<br/>
+
 **Question 3 :** Comment quitte-t-on le manuel ? <br/>
 Pour quitter le manuel il suffit de faire q<br/>
+
 **Question 4 :** Chaque section du manuel a une première page, qui présente le contenu de la section. Afficher la première page de la section 6 ; de quoi parle cette section ? <br/>
 Chaque section du manuel a une première page, qui présente le contenu de la section. Afficher la première page de la section 6 ; de quoi parle cette section ? Lorsque nous faisons un man ls par exemple, il y a marqué en haut à gauche : LS(1), ce qui veut dire que nous sommes dans la section 1 du man de la commande ls. Pour aller sur une section particulière d'une commande, il faut faire un man 2 open pour aller dans la deuxième section de la commande open.<br/>
+
 ### Navigation dans l’arborescence des fichiers
 **Question 1 :** Allez dans le dossier /var/log <br/>
 Pour aller dans /var/log, il faut faire un cd /var/log<br/>
+
 **Question 2 :** Remontez dans le dossier parent (/var) en utilisant un chemin relatif <br/>
 Pour remonter dans l'arbroescence, il faut donc faire un cd ..<br/>
+
 **Question 4 :** Revenez au dossier précédent (/var) sans utiliser de chemin <br/>
 Pour revenir au dossier précédent sans utiliser le chemin en /..., il faut faire un cd - <br/>
+
 **Question 5 :** Essayez d’accéder au dossier /root ; que se passe-t-il ?<br/>
 Nous ne pouvons pas accéder au dossier root car il nous faut des droits supplémentaires. --> la commande cd /root ne fonctionne donc pas.<br/>
+
 **Question 6 :** Essayez la commande sudo cd /root ; que se passe-t-il ? Expliquez <br/>
 Le systeme nous demande le mot de passe de notre comopte car nous executons une commande avec sudo, ce qui execute une commande avec les droits root<br/>
+
 **Question 7 :** A partir de votre dossier personnel, créez l’arborescence suivante : <br/>
 Pour créer un dossier il faut faire mkdir "nom du dossier". Notre dossier sera donc créé. Puis, il faut faire un cd /Notrenouveaudossier ce qui va nous placer dans notre dossier créé précéemment, puis, il faut faire un mkdir dans ce dossier pour créé une sorte de sous-dossier.<br/>
 
