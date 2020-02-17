@@ -1,29 +1,35 @@
 # Compte rendu de TP1
 
-Toutes les commandes ont été entrées en root !
+**Toutes les commandes ont été entrées en root !**
 
+## Exercice 2. Prise en main de l’interpréteur de commandes
+### Manuel
+**Question 1 :**
 Rôle de la commande which : La commande which prend un ou plusieurs paramètres. Pour chaque fichiers passés en paramètre, cette commande imprime le chemin de ou des éxécutables dans le terminal.
-
+**Question 2 :**
 Pour rechercher le terme "option" par exemple dans le man de which il faut taper les commandes suivantes : man which puis quand la page de man est ouverte, il faut faire : /option pour aller au premier terme option sur la page puis faire n pour passer au suivant
-
+**Question 3 :**
 Pour quitter le manuel il suffit de faire q
-
+**Question 4 :**
 Chaque section du manuel a une première page, qui présente le contenu de la section. Afficher la première page de la section 6 ; de quoi parle cette section ? Lorsque nous faisons un man ls par exemple, il y a marqué en haut à gauche : LS(1), ce qui veut dire que nous sommes dans la section 1 du man de la commande ls. Pour aller sur une section particulière d'une commande, il faut faire un man 2 open pour aller dans la deuxième section de la commande open.
-
+### Navigation dans l’arborescence des fichiers
+**Question 1 :**
 Pour aller dans /var/log, il faut faire un cd /var/log
-
+**Question 2 :**
 Pour remonter dans l'arbroescence, il faut donc faire un cd ..
 
 Pour revenir au dossier précédent sans utiliser le chemin en /..., il faut faire un cd -
-
+**Question 5 :**
 Nous ne pouvons pas accéder au dossier root car il nous faut des droits supplémentaires. --> la commande cd /root ne fonctionne donc pas.
-
+**Question 6 :**
+Le systeme nous demande le mot de passe de notre comopte car nous executons une commande avec sudo, ce qui execute une commande avec les droits root
+**Question 7 :**
 Pour créer un dossier il faut faire mkdir "nom du dossier". Notre dossier sera donc créé. Puis, il faut faire un cd /Notrenouveaudossier ce qui va nous placer dans notre dossier créé précéemment, puis, il faut faire un mkdir dans ce dossier pour créé une sorte de sous-dossier.
 
 Pour créé un fichier, il suffit de faire la commande suivante : touch "nom du fichier"
 
 Pour supprimer un fichier : il faut faire un rm "nom du fichier" Pour supprimer un dossier : il faut faire un rm "nom du dossier" -r (le -r permet de forcer la suppression du dossier même s'il n'est pas vide)
-
+### Commandes importantes
 Pour afficher l'heure, il faut faire la commande suivante : date
 
 La commande time est un chronomètre pour le temps d'éxécution de la commande Exemple : time man, time ls, time xxx.sh --> retourne le temps d'éxécution qui a été écoulé.
