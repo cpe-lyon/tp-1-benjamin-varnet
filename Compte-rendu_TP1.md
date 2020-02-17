@@ -105,6 +105,21 @@ find / -name passwd /usr/bin/passwd /usr/share/bash-completion/completions/passw
 
 **Question 20 :** Dans votre dossier personnel, utilisez la commande grep pour chercher où est défini l’alias ll vu précédemment Utilisez la commande locate pour trouver le fichier history.log. Créer un fichier dans votre dossier personnel puis utilisez locate pour le trouver. Apparaît-il ? Pourquoi ? Il n'apparaitra pas car il faut refresh ... avec la commande updatedb.<br/>
 
+## Exercice 3 : 
+
+F1 ou Ctrl + G Affichage de l’aide<br/>
+Ctrl + X Quitter nano / Fermer une fenêtre / Exécuter une commande<br/>
+Ctrl + R Ouvrir un fichier<br/>
+Ctrl + O Enregistrer sous<br/>
+Ctrl + S Enregistrer<br/>
+Ctrl + K Couper<br/>
+Ctrl + U Coller<br/>
+Ctrl + W Rechercher<br/>
+Ctrl + \ Remplacer<br/>
+Ctrl + C Afficher des informations sur la position du curseur (numéro de ligne, de colonne)<br/>
+Alt + U Annuler<br/>
+Alt + E Refaire<br/>
+
 ## Exercice 5 : 
 
 Plusieurs sites existe pour générer son propre prompt bash personnalisée : 
