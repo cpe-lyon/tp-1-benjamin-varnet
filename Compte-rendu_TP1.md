@@ -70,7 +70,11 @@ si on modifie titi tutu est également modifié. Alors que l'inverse n'est pas v
 **Question 13 :** Affichez à l’écran le fichier /var/log/syslog. Quels raccourcis clavier permettent d’interrompre et reprendre le défilement à l’écran ? le raccourci Ctrl + C<br/>
 
 Affichez les 5 premières lignes du fichier /var/log/syslog, puis les 15 dernières, puis seulement les lignes 10 à 20. <br/>
-Exemple : head /var/log/syslog -n 5 Feb 13 14:43:52 ubuntu kernel: \[ 0.000000\] Linux version 5.3.0-29-generic (buildd@lcy01-amd64-024) (gcc version 9.2.1 20191008 (Ubuntu 9.2.1-9ubuntu2)) #31-Ubuntu SMP Fri Jan 17 17:27:26 UTC 2020 (Ubuntu 5.3.0-29.31-generic 5.3.13) Feb 13 14:43:52 ubuntu kernel: \[ 0.000000\] Command line: BOOT_IMAGE=/boot/vmlinuz-5.3.0-29-generic root=UUID=a4b0d448-ca78-4c0e-99c2-12094d04e6e8 ro debian-installer/custom-installation=/custom find_preseed=/preseed.cfg auto preseed/file=/floppy/preseed.cfg automatic-ubiquity noprompt priority=critical locale=en_US console-setup/modelcode=evdev Feb 13 14:43:52 ubuntu kernel: \[ 0.000000\] KERNEL supported cpus: Feb 13 14:43:52 ubuntu kernel: \[ 0.000000\] Intel GenuineIntel Feb 13 14:43:52 ubuntu kernel: \[ 0.000000\] AMD AuthenticAMD<br/>
+Exemple : 
+head /var/log/syslog -n 5 <br/>
+tail /var/log/syslog -n 5 <br/>
+head -n 20 /var/log/syslog  | tail -n 10<br/>
+
 **Question 14 :** Que fait la commande dmesg | less ? Affiche tous les messages qui sont dans le buffer du kernel. La commande less s'apparente à la commande more mais avec des fonctionnalités en plus comme la possibilité de revenir en arrière quand on a avancé dans le fichier.<br/>
 
 **Question 15 :** Affichez à l’écran le fichier /etc/passwd ; que contient-il ? Quelle commande permet d’afficher la page de manuel de ce fichier ? /etc/passwd donne tous les comptes qui sont dans l'OS avec leur répertoire /home personnel.<br/>julien:x:1000:1000:julien:/home/julien:/bin/bash nom d'utilisateur:x car c'était anciennement le mot de passe:id du user:id du groupe de user:groupe:répertoire de travail du user par défaut:intérpréteur de commande utilisé pour cet user<br/>
@@ -101,7 +105,7 @@ find / -name passwd /usr/bin/passwd /usr/share/bash-completion/completions/passw
 
 **Question 20 :** Dans votre dossier personnel, utilisez la commande grep pour chercher où est défini l’alias ll vu précédemment Utilisez la commande locate pour trouver le fichier history.log. Créer un fichier dans votre dossier personnel puis utilisez locate pour le trouver. Apparaît-il ? Pourquoi ? Il n'apparaitra pas car il faut refresh ... avec la commande updatedb.<br/>
 
-Exercice 5 : 
+## Exercice 5 : 
 
 Plusieurs sites existe pour générer son propre prompt bash personnalisée : 
 
