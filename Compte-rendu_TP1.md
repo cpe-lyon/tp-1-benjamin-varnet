@@ -120,7 +120,7 @@ Ctrl + C Afficher des informations sur la position du curseur (numéro de ligne,
 Alt + U Annuler<br/>
 Alt + E Refaire<br/>
 
-## Exercice 5 : 
+## Exercice 5 : Couleur Prompt
 
 Plusieurs sites existe pour générer son propre prompt bash personnalisée : 
 
