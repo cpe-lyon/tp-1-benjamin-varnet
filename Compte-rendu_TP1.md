@@ -53,51 +53,53 @@ Donne ce qui est présent dans le répertoire parent de là où nous sommes actu
 **Question 8 :** Que fait la commande echo 'yo' > plop exécutée 2 fois ? <br/>
 Ecris yo dans le fichier plop<br/>
 
-Que fait la commande echo 'yo' >> plop exécutée 2 fois ? Affiche yo et fait un retour à la ligne à chaque éxécution de commande alors que la commande précdenté réécris au début du fichier<br/>
+**Question 9 :** Que fait la commande echo 'yo' >> plop exécutée 2 fois ?  <br/>
+Affiche yo et fait un retour à la ligne à chaque éxécution de commande alors que la commande précdenté réécris au début du fichier<br/>
 
-A quoi sert la commande file ? Essayez la sur des fichiers de types différents. Commande donne la description du fichier que l'on spécifie<br/>
+**Question 10 :** A quoi sert la commande file ? <br/>
+Essayez la sur des fichiers de types différents. Commande donne la description du fichier que l'on spécifie<br/>
 
-Créez un fichier toto qui contient la chaîne Hello Toto ! ; créer ensuite un lien titi vers ce fichier avec la commande ln toto titi. Modifiez à présent le contenu de toto et affichez le contenu de titi : qu’observe-t-on ? Supprimez le fichier toto ; quelle conséquence cela a-t-il sur titi ?<br/>
+**Question 11 :** Créez un fichier toto qui contient la chaîne Hello Toto ! ; créer ensuite un lien titi vers ce fichier avec la commande ln toto titi. Modifiez à présent le contenu de toto et affichez le contenu de titi : qu’observe-t-on ? Supprimez le fichier toto ; quelle conséquence cela a-t-il sur titi ?<br/>
 
 Prend en compte les modifications. Si on supprime toto, titi devient indépendant ça casse le lien<br/>
 
-Créez à présent un lien symbolique tutu sur titi avec la commande ln -s titi tutu. Modifiez le contenu de titi ; quelle conséquence pour tutu ? Et inversement ? Supprimez le fichier titi ; quelle conséquence cela a-t-il sur tutu ?<br/>
+**Question 12 :** Créez à présent un lien symbolique tutu sur titi avec la commande ln -s titi tutu. Modifiez le contenu de titi ; quelle conséquence pour tutu ? Et inversement ? Supprimez le fichier titi ; quelle conséquence cela a-t-il sur tutu ?<br/>
 
 si on modifie titi tutu est également modifié. Alors que l'inverse n'est pas vrai. Si on supprime le fichier titi, tutu sera encore visible par la commande ls. Cependant, si on supprime titi, tutu ne pourra pas être lu par le système.<br/>
 
-Affichez à l’écran le fichier /var/log/syslog. Quels raccourcis clavier permettent d’interrompre et reprendre le défilement à l’écran ? le raccourci Ctrl + C<br/>
+**Question 13 :** Affichez à l’écran le fichier /var/log/syslog. Quels raccourcis clavier permettent d’interrompre et reprendre le défilement à l’écran ? le raccourci Ctrl + C<br/>
 
-Affichez les 5 premières lignes du fichier /var/log/syslog, puis les 15 dernières, puis seulement les lignes 10 à 20. Exemple : head /var/log/syslog -n 5 Feb 13 14:43:52 ubuntu kernel: \[ 0.000000\] Linux version 5.3.0-29-generic (buildd@lcy01-amd64-024) (gcc version 9.2.1 20191008 (Ubuntu 9.2.1-9ubuntu2)) #31-Ubuntu SMP Fri Jan 17 17:27:26 UTC 2020 (Ubuntu 5.3.0-29.31-generic 5.3.13) Feb 13 14:43:52 ubuntu kernel: \[ 0.000000\] Command line: BOOT_IMAGE=/boot/vmlinuz-5.3.0-29-generic root=UUID=a4b0d448-ca78-4c0e-99c2-12094d04e6e8 ro debian-installer/custom-installation=/custom find_preseed=/preseed.cfg auto preseed/file=/floppy/preseed.cfg automatic-ubiquity noprompt priority=critical locale=en_US console-setup/modelcode=evdev Feb 13 14:43:52 ubuntu kernel: \[ 0.000000\] KERNEL supported cpus: Feb 13 14:43:52 ubuntu kernel: \[ 0.000000\] Intel GenuineIntel Feb 13 14:43:52 ubuntu kernel: \[ 0.000000\] AMD AuthenticAMD<br/>
+Affichez les 5 premières lignes du fichier /var/log/syslog, puis les 15 dernières, puis seulement les lignes 10 à 20. <br/>
+Exemple : head /var/log/syslog -n 5 Feb 13 14:43:52 ubuntu kernel: \[ 0.000000\] Linux version 5.3.0-29-generic (buildd@lcy01-amd64-024) (gcc version 9.2.1 20191008 (Ubuntu 9.2.1-9ubuntu2)) #31-Ubuntu SMP Fri Jan 17 17:27:26 UTC 2020 (Ubuntu 5.3.0-29.31-generic 5.3.13) Feb 13 14:43:52 ubuntu kernel: \[ 0.000000\] Command line: BOOT_IMAGE=/boot/vmlinuz-5.3.0-29-generic root=UUID=a4b0d448-ca78-4c0e-99c2-12094d04e6e8 ro debian-installer/custom-installation=/custom find_preseed=/preseed.cfg auto preseed/file=/floppy/preseed.cfg automatic-ubiquity noprompt priority=critical locale=en_US console-setup/modelcode=evdev Feb 13 14:43:52 ubuntu kernel: \[ 0.000000\] KERNEL supported cpus: Feb 13 14:43:52 ubuntu kernel: \[ 0.000000\] Intel GenuineIntel Feb 13 14:43:52 ubuntu kernel: \[ 0.000000\] AMD AuthenticAMD<br/>
+**Question 14 :** Que fait la commande dmesg | less ? Affiche tous les messages qui sont dans le buffer du kernel. La commande less s'apparente à la commande more mais avec des fonctionnalités en plus comme la possibilité de revenir en arrière quand on a avancé dans le fichier.<br/>
 
-Que fait la commande dmesg | less ? Affiche tous les messages qui sont dans le buffer du kernel. La commande less s'apparente à la commande more mais avec des fonctionnalités en plus comme la possibilité de revenir en arrière quand on a avancé dans le fichier.<br/>
-
-Affichez à l’écran le fichier /etc/passwd ; que contient-il ? Quelle commande permet d’afficher la page de manuel de ce fichier ? /etc/passwd donne tous les comptes qui sont dans l'OS avec leur répertoire /home personnel. julien:x:1000:1000:julien:/home/julien:/bin/bash nom d'utilisateur:x car c'était anciennement le mot de passe:id du user:id du groupe de user:groupe:répertoire de travail du user par défaut:intérpréteur de commande utilisé pour cet user<br/>
+**Question 15 :** Affichez à l’écran le fichier /etc/passwd ; que contient-il ? Quelle commande permet d’afficher la page de manuel de ce fichier ? /etc/passwd donne tous les comptes qui sont dans l'OS avec leur répertoire /home personnel.<br/>julien:x:1000:1000:julien:/home/julien:/bin/bash nom d'utilisateur:x car c'était anciennement le mot de passe:id du user:id du groupe de user:groupe:répertoire de travail du user par défaut:intérpréteur de commande utilisé pour cet user<br/>
 
 La commande qui permet d'afficher le man de ce fichier est man passwd<br/>
 
-Affichez seulement la première colonne triée par ordre alphabétique inverse<br/>
+**Question 16 :** Affichez seulement la première colonne triée par ordre alphabétique inverse<br/>
 
 La commande a entrée est : sort -r /etc/passwd<br/>
 
 sort est la commande qui permet de trier et -r est l'équivalent de reverse.<br/>
 
-Quelle commande nous donne le nombre d’utilisateurs ayant un compte sur cette machine (pas seulement les utilisateurs connectés) ?<br/>
+**Question 17 :** Quelle commande nous donne le nombre d’utilisateurs ayant un compte sur cette machine (pas seulement les utilisateurs connectés) ?<br/>
 
 la commande est : cut -d: -f1 /etc/passwd | wc -l<br/>
 
 cut permet de couper le fichier -d: permet de dire chaque fois qu'il y a des : et le -f1 prend la première colonne La commande awk affiche les utilisateurs et la commande wc -l permet de compter.<br/>
 
-Combien de pages de manuel comportent le mot-clé conversion dans leur description ?<br/>
+**Question 18 :** Combien de pages de manuel comportent le mot-clé conversion dans leur description ?<br/>
 
 A l’aide de la commande find, recherchez tous les fichiers se nommant passwd présents sur la machine<br/>
 
 find / -name passwd /usr/bin/passwd /usr/share/bash-completion/completions/passwd /usr/share/lintian/overrides/passwd /usr/share/doc/passwd /etc/passwd /etc/cron.daily/passwd /etc/pam.d/passwd /snap/core/7917/etc/cron.daily/passwd /snap/core/7917/etc/pam.d/passwd /snap/core/7917/etc/passwd /snap/core/7917/usr/bin/passwd /snap/core/7917/usr/share/bash-completion/completions/passwd /snap/core/7917/usr/share/doc/passwd /snap/core/7917/var/lib/extrausers/passwd<br/>
 
-Modifiez la commande précédente pour que la liste des fichiers trouvés soit enregistrée dans le fichier \~/list_passwd_files.txt et que les erreurs soient redirigées vers le fichier spécial /dev/null find / -name passwd > list_passwd_files.txt 2> /dev/null
+**Question 19 :** Modifiez la commande précédente pour que la liste des fichiers trouvés soit enregistrée dans le fichier \~/list_passwd_files.txt et que les erreurs soient redirigées vers le fichier spécial /dev/null find / -name passwd > list_passwd_files.txt 2> /dev/null
 
 > : pour redir le stdout , ce qui s'affiche dans le terminal 2> : pour redir stderr, redirige les erreurs de la commande dans le fichier null.<br/>
 
-Dans votre dossier personnel, utilisez la commande grep pour chercher où est défini l’alias ll vu précédemment Utilisez la commande locate pour trouver le fichier history.log. Créer un fichier dans votre dossier personnel puis utilisez locate pour le trouver. Apparaît-il ? Pourquoi ? Il n'apparaitra pas car il faut refresh ... avec la commande updatedb.<br/>
+**Question 20 :** Dans votre dossier personnel, utilisez la commande grep pour chercher où est défini l’alias ll vu précédemment Utilisez la commande locate pour trouver le fichier history.log. Créer un fichier dans votre dossier personnel puis utilisez locate pour le trouver. Apparaît-il ? Pourquoi ? Il n'apparaitra pas car il faut refresh ... avec la commande updatedb.<br/>
 
 Exercice 5 : 
 
