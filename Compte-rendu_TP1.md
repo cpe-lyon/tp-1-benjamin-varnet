@@ -4,7 +4,7 @@
 
 ## Exercice 2. Prise en main de l’interpréteur de commandes
 ### Manuel
-**Question 1 :** A l’aide du manuel, identifiez le rôle de la commande which <br/>
+**Question 1 :** A l’aide du manuel, identifiez le rôle de la commande \tt which <br/>
 Rôle de la commande which : La commande which prend un ou plusieurs paramètres. Pour chaque fichiers passés en paramètre, cette commande imprime le chemin de ou des éxécutables dans le terminal.
 
 **Question 2 :** Quand on consulte une page du manuel, comment peut-on rechercher un terme (par exemple, chercher
