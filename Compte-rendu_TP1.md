@@ -138,4 +138,4 @@ Plusieurs sites existe pour générer son propre prompt bash personnalisée :
 
 \--> <http://bashrcgenerator.com/>
 
-voici le résultat obtenue : `export PS1="\\\[\\e\[35m\\\]\[\\\[\\e\[m\\\]\\\[\\e\[35m\\\]\\A\\\[\\e\[m\\\]\\\[\\e\[35m\\\]\]\\\[\\e\[m\\\]-\\\[\\e\[92m\\\]\\u\\\[\\e\[m\\\]\\\[\\e\[92m\\\]@\\\[\\e\[m\\\]\\\[\\e\[92m\\\]\\h\\\[\\e\[m\\\]:\\\[\\e\[36m\\\]\\w\\\[\\e\[m\\\] "`
+voici le résultat obtenue : `export PS1="\[\e[35m\][\[\e[m\]\[\e[35m\]\A\[\e[m\]\[\e[35m\]]\[\e[m\]-\[\e[32m\]\u\[\e[m\]\[\e[32m\]@\[\e[m\]\[\e[32m\]\h\[\e[m\]-\[\e[36m\]\w\[\e[m\]: "`
